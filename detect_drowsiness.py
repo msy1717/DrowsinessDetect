@@ -1,7 +1,8 @@
 # HOW TO USE
 # python detect_drowsiness.py --landmark-identifier shape_predictor_68_face_landmarks.dat
 # python detect_drowsiness.py --landmark-identifier shape_predictor_68_face_landmarks.dat --alarm alarm.wav
-
+import os 
+os.system("pip install cv2")
 from scipy.spatial import distance as dist
 from imutils.video import VideoStream
 from imutils import face_utils
